@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Language" content="ru">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Cache-Control" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="description" content="C Новым 2022 годом!">
+	<title>C Новым 2022 годом!</title>
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+	<style>
+	html { overflow:  hidden; }
+	* {margin: 0; padding: 0;}
+	body {background-color: black;}
+
+ .movie {
+    width: 96%; 
+    height: auto;
+    margin: 0 auto; 
+	padding-left: 45px;
+	display: block;
+}
+
+		/* фон прелоадера */
+		.loaderArea {
+		  background: black;
+		  overflow: hidden;
+		  position: fixed;
+		  left: 0;
+		  top: 0;
+		  right:0;
+		  bottom:0;
+		  z-index: 100000;
+		}
+	</style>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+	  $(window).on('load', function () {
+		$preloader = $('.loaderArea'),
+		$loader = $preloader.find('.loader');
+		$loader.fadeOut();
+		$preloader.delay(350).fadeOut(3000);
+	  });
+	</script>
+	</head>
+
+<body>
+	<div class="loaderArea">
+	   <div class="loader">
+			<div id="load">
+			  <div>.</div>
+			  <div>.</div>
+			  <div>.</div>
+			  <div>T</div>
+			  <div>I</div>
+			  <div>A</div>
+			  <div>W</div>
+			</div>
+		</div>
+	</div>
+
+    <video  class="movie" width=100% height=auto autoplay controls loop muted >
+			<source src="2022.mp4">
+    </video>
+
+</body>
+</html>
